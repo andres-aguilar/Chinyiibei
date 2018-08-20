@@ -1,0 +1,121 @@
+:root {
+    --blue: #3e32e6;
+    --dark-blue: #352bbe;
+    --light: #f0f0f0;
+}
+
+html, body {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+.contenedor {
+    padding: 1em;
+}
+
+#sidebar {
+    background-color: var(--blue);
+    color: var(--light);
+    min-width: 250px;
+    max-width: 250px;
+    height: 100vh;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: var(--dark-blue);
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: var(--light);
+    padding-top: 10px;
+}
+#sidebar ul li a {
+    padding: 0.8em 2em;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    background: var(--light);
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+a {
+    color: var(--light);
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.7em;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
